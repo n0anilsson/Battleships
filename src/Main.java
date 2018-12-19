@@ -1,3 +1,4 @@
+import java.util.Scanner;
 
 public class Main {
 		
@@ -6,13 +7,14 @@ public class Main {
 		int[][] gameboard = Board.createBoard(8,8);
 		Board.printBoard(gameboard);
 		
-		gameboard[5][6] = 1;
-		gameboard[5][7] = -1;
+		Scanner input = new Scanner(System.in);
 		
+		while (1 > 0) {
+		int row = input.nextInt();
+		int col = input.nextInt();
+		Player.shoot(gameboard, row,col);
 		Board.printBoard(gameboard);
-		
-		Player.shoot(gameboard, 3,7);
-		Board.printBoard(gameboard);
+		}
 	}
 
 }
