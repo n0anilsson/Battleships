@@ -16,10 +16,6 @@ public class Main {
 	public static void printBoard(int[][] board) {
 		
 		System.out.println();
-		System.out.println("_______________________");
-		System.out.println("ROUND 1  -  HIT % ");
-		System.out.println("_______________________");
-		System.out.println();
 		
 		System.out.println("  A B C D E F G H");
 		for(int i = 0; i < board.length; i++) {
